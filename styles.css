@@ -76,7 +76,6 @@ nav ul li {
     font-weight: 500;
     border-radius: 10px;
     border: none;
-    cursor: pointer;
 }
 
 .navBtn:hover {
@@ -216,7 +215,6 @@ div.line-btm {
 .link-icon i {
     font-size: 2rem;
     font-weight: 200;
-    cursor: pointer;
 }
 
 .link-icon h4 {
@@ -463,7 +461,7 @@ div.line-btm {
     justify-content: center;
     width: 600px;
     height: 150px;
-    background-color: cornsilk;
+    background-color: rgb(192, 211, 142);
     border-radius: 20px;
 }
 
@@ -480,7 +478,7 @@ div.line-btm {
     width: 600px;
     height: 150px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: rgb(192, 211, 142);
 }
 
 
@@ -495,7 +493,7 @@ div.line-btm {
 .tryItNow {
     background-color: var(--greenyellow);
     color: var(--black);
-    width: 140px;
+    width: fit-content;
     height: 40px;
     display: flex;
     align-items: center;
@@ -507,6 +505,7 @@ div.line-btm {
     border: none;
     cursor: pointer;
     text-decoration: none;
+    padding: 10px;
 }
 
 footer {
