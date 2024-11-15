@@ -23,6 +23,7 @@ body,
     font-family: "DM Mono", monospace;
     font-weight: 300;
     font-style: normal;
+    position: relative;
 }
 
 nav {
@@ -447,20 +448,21 @@ div.line-btm {
 
 .page4 {
     width: 100%;
-    height: 70%;
+    min-height: 30vh;
     display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
-    align-items: center;
+    padding-top: 60px;
+    margin-bottom: 100px;
 }
 
-.btnContainer1 {
-    margin: 0px 70px 0px 70px;
+.btnContainer1, .btnContainer2, .btnContainer3 {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    width: 600px;
-    height: 150px;
+    width: 400px;
+    height: 200px;
     background-color: rgb(192, 211, 142);
     border-radius: 20px;
 }
@@ -468,19 +470,6 @@ div.line-btm {
 .page4 p {
     margin: 20px 30px 0px 30px;
 }
-
-.btnContainer2 {
-    margin: 0px 70px 0px 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    width: 600px;
-    height: 150px;
-    border-radius: 20px;
-    background-color: rgb(192, 211, 142);
-}
-
 
 .tryBtn {
     display: flex;
@@ -510,15 +499,17 @@ div.line-btm {
 
 footer {
     width: 100%;
-    height: calc(70% - 90px);
     border-top: 2px solid var(--greenyellow);
+    background-color: var(--body);
+    margin-top: auto;
+    padding: 50px 0;
 }
 
 .footContent {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 50px;
+    padding: 0 50px;
 }
 
 .logo_info {
@@ -536,16 +527,14 @@ footer {
 .logo_info p {
     color: var(--navfont);
     font-size: 0.7rem;
-    margin-left: 23px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
+    margin: 8px 0;
 }
 
 .socialLinks {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 15px 0;
 }
 
 .socialLinks .outerCircle {
@@ -581,12 +570,13 @@ footer {
     color: white;
     font-size: 1.3rem;
     letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 .info li {
     color: var(--navfont);
     font-size: 0.8rem;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
     width: fit-content;
 }
 
@@ -595,7 +585,7 @@ footer {
 }
 
 .col1, .col2, .col3 {
-    margin: 50px;
+    margin: 0 30px;
 }
 
 .col1 h2, .col2 h2, .col3 h2 {
@@ -607,14 +597,14 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 70px;
+    margin-bottom: 0;
 }
 
 .news-info h2 {
     color: white;
     font-size: 1.3rem;
     letter-spacing: 1px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .inputSearch {
@@ -649,6 +639,6 @@ footer {
     color: var(--navfont);
     font-size: 0.7rem;
     margin-left: -60px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
